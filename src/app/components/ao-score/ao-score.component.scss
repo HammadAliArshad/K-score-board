@@ -1,0 +1,51 @@
+.left-side{
+  background-color: blue;
+  float: left;
+  margin-left: 10%;
+  width: 40%;
+  height: 550px;
+}
+.score{
+  margin-left: 20%;
+  font-size: 150px;
+}
+
+button{
+  background-color: transparent;
+  color: white;
+  margin: 5px;
+  font-weight: bolder;
+}
+.sqr{
+  border: 2px solid white;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.circle{
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+button:hover{
+ background-color: gray;
+}
+
+.add{
+  border: 1px solid white;
+  background-color: darkblue;
+  padding: 6px;
+  margin-top: 50px;
+}
+
+.minus{
+  border: none;
+  color: black;
+}
+
+.undo{
+  position: absolute;
+  margin-left: 430px;
+}
+

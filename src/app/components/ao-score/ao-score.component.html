@@ -1,0 +1,24 @@
+<div class="left-side">
+  <p class="score">{{score}}</p>
+  <button (click)="onClick1()" class="sqr">C1</button>
+  <button class="circle">W <i *ngIf="penelty1 >= 1" class="fa fa-check"></i></button>
+  <button class="circle">K <i *ngIf="penelty1 >= 2" class="fa fa-check"></i></button>
+  <button class="circle">HC <i *ngIf="penelty1 >= 3" class="fa fa-check"></i></button>
+  <button class="circle">H <i *ngIf="penelty1 >= 4" class="fa fa-check"></i></button>
+  <br>
+  <button (click)="onUndo()" class="undo">
+    <i class="fa fa-refresh"></i>
+  </button>
+  <button (click)="onClick2()" class="sqr">C2</button>
+  <button class="circle">W <i *ngIf="penelty2 >= 1 " class="fa fa-check"></i></button>
+  <button class="circle">K <i *ngIf="penelty2 >= 2" class="fa fa-check"></i></button>
+  <button class="circle">HC <i *ngIf="penelty2 >= 3" class="fa fa-check"></i></button>
+  <button class="circle">H <i *ngIf="penelty2 >= 4" class="fa fa-check"></i></button>
+  <br>
+  <button (click)="onAdd()" style="margin-left: 70px;" class="add">Yuko</button>
+  <button class="minus" (click)="onMinus()" *ngIf="score!=0"><i class="fa fa-minus"></i></button>
+  <button class="add" (click)="onAdd2()">Wazari</button>
+  <button class="minus" (click)="onMinus2()" *ngIf="score!=0" [disabled]="score == 1"><i class="fa fa-minus"></i></button>
+  <button class="add" (click)="onAdd3()">Ippon</button>
+  <button class="minus" (click)="onMinus3()" *ngIf="score!=0" [disabled]="score === 2 || score ===1"><i class="fa fa-minus"></i></button>
+</div>

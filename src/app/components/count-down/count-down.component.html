@@ -1,0 +1,22 @@
+<div class="top">
+  <countdown  style="font-weight: bolder;" #cd [config]="{ leftTime: matchTime, demand: true, format: 'm:ss:S' }"></countdown>
+</div>
+<div class="down">
+  <span class="left">
+    <button><i class="fa fa-exchange"></i></button>
+  </span>
+  <span class="center">
+    <button (click)="cd.begin()" style="font-weight: bolder;">Hajime</button>
+    <button (click)="cd.pause()" style="font-weight: bolder;">Matte</button>
+  </span>
+  <span class="right">
+    <button (click)="cd.restart()" style="font-weight: bolder;">Reset</button>
+  </span>
+</div>
+<div class="mtime">
+  <p>Match Time</p>
+  <button (click)="onClick()" class="time">90</button>
+  <button (click)="onSelect()" class="time">2</button>
+  <button (click)="onTouch()" class="time">3</button>
+</div>
+

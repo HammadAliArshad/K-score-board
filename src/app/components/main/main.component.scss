@@ -1,0 +1,44 @@
+input {
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.btton{
+  float: right;
+  padding: 4px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  background-image: linear-gradient(to right, rgb(113, 1, 1), rgba(255,0,0,1));
+}
+
+.ao{
+  font-size: 24px;
+  font-weight: bolder;
+  color: blue;
+}
+
+.aka{
+  font-size: 24px;
+  font-weight: bolder;
+  color: red;
+}
+
+.left{
+  margin-left: 5%;
+}
+
+.right{
+  margin-left: 30%;
+}
